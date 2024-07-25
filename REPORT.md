@@ -1,13 +1,13 @@
 # Report
 
 ## Solution
-1.k8s manifests were created. As the very first step they were created by kompose util, so that is why the labels are still there.
+1. k8s manifests were created. As the very first step they were created by kompose util, so that is why the labels are still there.
 Additionally I had to change fortuneSlice.ts in frontend/src/features/fortune. The solution is ugly I put in line #17 following:
 ('http://backend.default.svc.cluster.local:8080/');
  instead of http://localhost:8080. 
  Not to have uggly solution a variable would need to be setup here and it should be deifned on deployment/pod  level of frontend,     
- 2. To show you what I was doing during the debug you can see commented out lines in backend manifets, where I tried to put both containers in one pod to check their communication. This would not definitely be a good solution, but to show you what I was doing.
- 3. Attaching screenshots & frontend log regarding deployment.
+2. To show you what I was doing during the debug you can see commented out lines in backend manifets, where I tried to put both containers in one pod to check their communication. This would not definitely be a good solution, but to show you what I was doing.
+3. Attaching screenshots & frontend log regarding deployment.
 ![Browser](k8s/images/browser.odg)
 ![Logs](k8s/images/logs.odg)
 
