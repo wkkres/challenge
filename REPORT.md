@@ -8,7 +8,7 @@ Additionally I had to change fortuneSlice.ts in frontend/src/features/fortune. T
  Not to have uggly solution a variable would need to be setup here and it should be deifned on deployment/pod  level of frontend,     
 2. To show you what I was doing during the debug you can see commented out lines in backend manifets, where I tried to put both containers in one pod to check their communication. This would not definitely be a good solution, but to show you what I was doing.
 3. Attaching screenshots & frontend log regarding deployment.
-![Browser](k8s/images/browser.odg)
+![alt text](k8s/images/browser.odg "Browser")
 ![Logs](k8s/images/logs.odg)
 
 ### Questions
